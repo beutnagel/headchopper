@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HeadChopper™</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Creepster|Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>The avid</h2>
+      <h1>HeadChopper™</h1>
+      <button>press to play</button>
+    </header>
+
+    <footer>
+      <img src="inspiration/benjen___29.gif" alt="" />
+    </footer>
+
+    <script>
+      let button = document.querySelector("button");
+      let header = document.querySelector("header");
+      let footer = document.querySelector("footer");
+
+      button.addEventListener("click", function () {
+        header.classList.add("hidden");
+        footer.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
